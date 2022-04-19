@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Build') {
             agent {
-                docker { image 'python:2-alpine }
+                docker { image 'python:2-alpine' }
             }
             steps {
                 //This sh step runs the Python command to compile your application and
